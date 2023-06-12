@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,41 +13,46 @@
     <title>PlantStop</title>
   </head>
   <body>
-    <header class="container">
+    <header class="container header">
       <img
+        class="header__image"
         src="./assets/img/logo.png"
-        alt="Uma planta com o texto PlantStop que se traduzido se lê Parada das Plantas, um e-commerce de compra de plantas"
+        alt="The leaf of a plant with the words PlantStop, an e-commerce of buying plants"
       />
 
-      <nav>
-        <ul class="navbar-container">
-          <li><a href="#" class="navbar-link">Comprar</a></li>
-          <li><a href="#" class="navbar-link">Sobre</a></li>
-          <li><a href="#" class="navbar-link">Contato</a></li>
+      <nav class="header__navbar">
+        <ul class="header__navbar__list">
+          <li class="header__navbar__list__item">
+            <a href="#">Shop Plants</a>
+          </li>
+          <li class="header__navbar__list__item"><a href="#">About Us</a></li>
+          <li class="header__navbar__list__item"><a href="#">Contact</a></li>
         </ul>
       </nav>
     </header>
 
-    <aside class="ad-container container">
-      <p>Nova espécie de Philodendron disponíveis!</p>
-      <a href="#">Saiba mais!</a>
+    <aside class="container ad">
+      <p class="ad__text">New Species of Philodendron Plants Now Available!</p>
+      <a class="ad__text ad__link" href="#">Learn More</a>
     </aside>
 
-    <main class="container headline">
+    <main class="container main">
       <img
+        class="main__image"
         src="./assets/img/bonsai.png"
-        alt="Uma planta com raízes densas em um
-      pequeno vaso"
+        alt="A tiny three in a pot"
       />
-      <div class="headline-text">
-        <p>Seu melhor shopping para coisas <span>verdes</span>!</p>
-        <button>Plantas disponiveis</button>
+      <div class="main__info">
+        <p class="main__text">
+          Your one-stop shop for all things <span>green</span>!
+        </p>
+        <a class="main__text main__link" href="#">Plantas disponiveis</a>
       </div>
     </main>
 
-    <section class="sobre container">
-      <div class="sobre-text">
-        <h2>Quem somos nós</h2>
+    <section class="container about">
+      <div class="about__info">
+        <h2 class="about__title">Quem somos nós</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda
           maiores nesciunt inventore earum, nihil tempora, dolorem magni ex modi
@@ -60,9 +64,54 @@
         </p>
       </div>
       <img
-        src="./assets/img/cliente.png"
+        class="about__image"
+        src="./assets/img/client.png"
         alt="Uma mulher loira, branca, segurando uma planta"
       />
     </section>
+
+    <!-- 
+    <section class="container selled">
+      <h2 class="section-title">Mais vendidos</h2>
+      <ul>
+        <li>
+          <a href="#">
+            <img
+              src="./assets/img/plant01.png"
+              alt="A Peace Lily it's a green tall plant in a white pot with with flowers"
+            />
+            <span>Lírio da paz</span></a
+          >
+        </li>
+        <li>
+          <a href="#">
+            <img
+              src="./assets/img/plant01.png"
+              alt="A Peace Lily it's a green tall plant in a white pot with with flowers"
+            />
+            <span>Lírio da paz</span></a
+          >
+        </li>
+        <li>
+          <a href="#">
+            <img
+              src="./assets/img/plant01.png"
+              alt="A Peace Lily it's a green tall plant in a white pot with with flowers"
+            />
+            <span>Lírio da paz</span></a
+          >
+        </li>
+        <li>
+          <a href="#">
+            <img
+              src="./assets/img/plant01.png"
+              alt="A Peace Lily it's a green tall plant in a white pot with with flowers"
+            />
+            <span>Lírio da paz</span></a
+          >
+        </li>
+      </ul>
+    </section>
+    -->
   </body>
 </html>
