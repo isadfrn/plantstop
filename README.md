@@ -4,9 +4,11 @@
 ![Repository size](https://img.shields.io/github/repo-size/isadfrn/plantstop?style=flat-square)
 ![Last commit](https://img.shields.io/github/last-commit/isadfrn/plantstop?style=flat-square)
 
+![](./assets/img/demo.gif)
+
 ## About
 
-This project was developed during a DDS-T12 Review Day. I developed this project during the class with my students in order to teach basic concepts about CSS, Flexbox, Variables, and so on.
+This project was developed with my students during a DDS-T12 Review Day in order to teach basic concepts about CSS, Flexbox, Variables, and so on. The Layout used in this project it's from [David Serrao Figma](https://www.figma.com/community/file/1243098972195096824).
 
 ## Run
 
@@ -25,7 +27,7 @@ I thank you in advance for any contribution.
 
 ## Status
 
-Building
+Maintaining
 
 ## License
 
