@@ -18,6 +18,10 @@ html {
 body {
   width: 100%;
   height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
 }
 
 .container {
@@ -30,11 +34,11 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-bottom: 2rem;
 }
 
 .header__image {
   padding: 1rem 0;
+  max-width: 30rem;
 }
 
 .header__navbar__list__item {
@@ -84,8 +88,6 @@ body {
 }
 
 .main {
-  padding: 4rem 0;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -123,6 +125,168 @@ body {
   transition: all 500ms;
 }
 
+.about {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about__info {
+  text-align: center;
+}
+
 .about__title {
   font-size: 3rem;
+  padding-bottom: 1rem;
+}
+
+.about__text {
+  font-size: 1.8rem;
+  padding-bottom: 1rem;
+}
+
+.about__image {
+  max-width: 30rem;
+  padding-bottom: 4rem;
+}
+
+.selled {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.selled__title {
+  font-size: 3rem;
+  padding-bottom: 1rem;
+}
+
+.selled__list__item {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.selled__list__item img {
+  max-width: 20rem;
+}
+
+.contact {
+  border: 3px solid var(--green);
+  border-radius: 0.6rem;
+}
+
+.contact__info__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact__info__header__title {
+  font-size: 3rem;
+  padding-bottom: 1rem;
+}
+
+.contact__info__header__icon__image {
+  max-width: 5rem;
+}
+
+.contact__form {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.contact__form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.contact__form input,
+.contact__form textarea {
+  font-size: 1.6rem;
+  padding: 1rem;
+  border: 1px solid var(--black);
+  font-family: "Mulish", sans-serif;
+}
+
+.contact__form input:focus,
+.contact__form textarea:focus {
+  border: 4px solid var(--green);
+}
+
+.contact__form input:last-child {
+  margin-bottom: 1rem;
+}
+
+.contact__form input[type="submit"] {
+  background-color: var(--green);
+  color: var(--white);
+  border: none;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.contact__form input[type="submit"]:hover {
+  cursor: pointer;
+  filter: brightness(1.1);
+  transition: all 500ms;
+}
+
+.contact__image {
+  display: none;
+}
+
+.footer {
+  background-color: var(--green);
+  padding: 1rem 0;
+  color: var(--white);
+  font-size: 2rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 80%;
+  }
+
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .header__navbar__list {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .main {
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 8rem;
+  }
+
+  .about {
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 8rem;
+  }
+
+  .selled__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contact {
+    max-width: 40%;
+  }
 }
